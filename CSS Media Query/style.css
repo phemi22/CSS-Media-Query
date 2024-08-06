@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-section{
+    width: 100%;
+    height: auto;
+    padding: 5rem 8rem 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.cards-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.card{
+    width: 32%;
+    height: auto;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.card-title-container{
+    width: fit-content;
+    height: auto;
+}
+
+.card-title-container h1{
+    font-size: 1.2rem;
+    color: #1e1e1e;
+}
+
+.card-description-container{
+    width: 100%;
+    height: auto;
+}
+
+.card-description-container p{
+    color: #1e1e1e;
+    line-height: 1.2rem;
+}
+
+.card-button-container{
+    width: fit-content;
+    height: auto;
+}
+
+.card-button-container button{
+    background-color: black;
+    color: white;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 1120px){
+    .card-section{
+        width: 100%;
+        height: auto;
+        padding: 4rem 3rem 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .card{
+        width: 48%;
+        height: auto;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid red;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .card-section{
+        width: 100%;
+        height: auto;
+        padding: 2rem 0.5rem 2rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        background-color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 1rem;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid black;
+    }
+}
